@@ -99,6 +99,7 @@ body {
     cursor: pointer;
     padding: 14px 18px;
     transition: 0.3s;
+    color: black;
 }
 
 /* reset pre tag */
