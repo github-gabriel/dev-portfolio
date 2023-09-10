@@ -7,4 +7,4 @@ habe ich von [hier](https://www.w3schools.com/howto/howto_js_tabs.asp) ein wenig
 
 ### Diese Seite ist erreichbar unter: https://dev.gabriel-haberlach.de/
 
-<image src="https://user-images.githubusercontent.com/92476790/210363602-b6533e95-95be-4076-b346-c8ef233962f5.PNG" width="1280"></image>
+<image src="https://github.com/github-gabriel/dev-portfolio/assets/92476790/f3029feb-bb9c-4f2d-86fc-4ddb2d9590ca" width="1280"></image>
