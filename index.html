@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<!--Weitere gute Stylesheets:-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/atom-one-dark.min.css-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/stackoverflow-dark.min.css-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/edge-dark.min.css-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/humanoid-dark.min.css-->
+<!--https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/base16/onedark.min.css-->
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Gabriel | Homepage</title>
+    <link rel="icon" href="assets/logo-github.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/atom-one-dark.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <div class="flex-container">
+
+        <div class="wrapper">
+
+            <!--Ueberschrift-->
+
+            <h1 id="header">Gabriel | Portfolio</h1>
+            <p id="subtitle">Mein Portfolio in einem Code/Console-Style</p>
+
+            <!--Ueberschrift Ende-->
+
+            <!--Container Start; Tab Buttons-->
+
+            <div class="container">
+
+                <div class="tab">
+                    <button id="codeBtn" class="tablinks" onclick="openCode()">Code</button>
+                    <button id="consoleBtn" class="tablinks" onclick="openConsole()">Console</button>
+                </div>
+
+                <!--Tab Buttons Ende-->
+
+                <!--Java Code und 'Run Code' Button-->
+
+                <div id="Code" class="tabcontent" style="display: block;">
+                    <pre><code class="java">public class Main{
+    
+public static void main(String[] args) {
+    
+    Person gabriel = new Person();
+    System.out.println(gabriel.toString());
+    
+    }
+}
+                    </code><br>&nbsp;</pre>
+                    <button type="button" class="runBtn" onclick="openConsole()">
+                        <span class="button__text">Run</span>
+                        <span class="button__icon">
+                            <ion-icon name="caret-forward-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Java Code und 'Run Code' Button Ende-->
+
+                <!--Konsole Output-->
+
+                <div id="Console" class="tabcontent">
+                    <p>
+                        <span class="ueberschrift">About Me</span>
+                        <br><span class="text">
+                            Hallo, mein Name ist Gabriel, und ich interessiere mich fürs Programmieren.
+                            Meine Hauptprogrammiersprache ist Java, aber ich arbeite gelegentlich auch mit Python.
+                            Zusätzlich beherrsche ich das Erstellen von Webseiten mithilfe von HTML, CSS und Vanilla JS.
+                            Außerdem plane ich, meine Kenntnisse in C++ auszubauen.
+                            Meine Interessen liegen vor allem im Bereich Backends und Server, aber ich entwickle auch gerne einfache Alltagsanwendungen.
+                            In Zukunft möchte ich mich auf Künstliche Intelligenz konzentrieren.
+                        </span>
+                    </p>
+                    <br>
+                    <p>
+                        <span class="ueberschrift">Projekte</span>
+                        <span class="text">
+                            <br>Alle meine Projekte sind
+                            <a id="link" href="https://github.com/github-gabriel" target="blank">hier</a>
+                            auffindbar.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!--Konsole Output Ende-->
+
+            <!--Social Media Links-->
+
+            <div class="social-profiles">
+                <a class="icons" href="https://github.com/github-gabriel" target="blank">
+                    <span title="GitHub">
+                        <ion-icon name="logo-github" style="pointer-events:none"></ion-icon>
+                    </span>
+                </a>
+                <!--https://mail.google.com/mail/u/0/?fs=1&to=gabriel.haberlach@gmail.com&tf=cm-->
+                <a class="icons" href="mailto:gabriel.haberlach@gmail.com" target="blank">
+                    <span title="E-Mail">
+                        <ion-icon name="mail-outline" style="pointer-events:none"></ion-icon>
+                    </span>
+                </a>
+            </div>
+
+            <!--Social Media Links Ende-->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
