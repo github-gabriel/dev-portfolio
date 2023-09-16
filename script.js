@@ -2,55 +2,44 @@
 
 function onLoadFunctions(){
     document.getElementById("codeBtn").classList.add('focused');
+    document.getElementsByClassName("run")[0].onclick = function (){
+        openTab("Console")
+    }
+    document.getElementsByClassName("stop")[0].onclick = function (){
+        openTab("Code")
+    }
+    document.getElementById("codeBtn").onclick = function (){
+        openTab("Code")
+    }
+    document.getElementById("consoleBtn").onclick = function (){
+        openTab("Console")
+    }
 }
 window.onload = onLoadFunctions;
 
-function openCode() {
+function openTab(tabName) {
+    const codeBtn = document.getElementById("codeBtn");
+    const consoleBtn = document.getElementById("consoleBtn");
+    const tabContent = document.getElementsByClassName("tabcontent");
+    const tabLinks = document.getElementsByClassName("tablinks");
 
-    document.getElementById("codeBtn").classList.add('focused');
-    document.getElementById("consoleBtn").classList.remove('focused');
+    // Reset all tabs and buttons
+    codeBtn.classList.remove('focused');
+    consoleBtn.classList.remove('focused');
 
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    for (let i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
     }
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById("Code").style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-function openConsole() {
-
-    document.getElementById("codeBtn").classList.remove('focused');
-    document.getElementById("consoleBtn").classList.add('focused');
-
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    // Show the selected tab and add "active" class to the button
+    document.getElementById(tabName).style.display = "block";
+    if (tabName === "Code") {
+        codeBtn.classList.add('focused');
+    } else {
+        consoleBtn.classList.add('focused');
     }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById("Console").style.display = "block";
-    evt.currentTarget.className += " active";
 }

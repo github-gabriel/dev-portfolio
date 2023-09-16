@@ -43,8 +43,8 @@
             <div class="container">
 
                 <div class="tab">
-                    <button id="codeBtn" class="tablinks" onclick="openCode()">Code</button>
-                    <button id="consoleBtn" class="tablinks" onclick="openConsole()">Console</button>
+                    <button id="codeBtn" class="tablinks">Code</button>
+                    <button id="consoleBtn" class="tablinks">Console</button>
                 </div>
 
                 <!--Tab Buttons Ende-->
@@ -58,11 +58,13 @@ public static void main(String[] args) {
     
     Person gabriel = new Person();
     System.out.println(gabriel.toString());
+
+    // TODO: Implement spaghetti code method 🍝
     
     }
 }
                     </code><br>&nbsp;</pre>
-                    <button type="button" class="runBtn" onclick="openConsole()">
+                    <button type="button" class="button run">
                         <span class="button__text">Run</span>
                         <span class="button__icon">
                             <ion-icon name="caret-forward-outline"></ion-icon>
@@ -74,9 +76,9 @@ public static void main(String[] args) {
 
                 <!--Konsole Output-->
 
-                <div id="Console" class="tabcontent">
+                <div id="Console" class="tabcontent console">
                     <p>
-                        <span class="ueberschrift">About Me</span>
+                        <span class="textHeadline">📌About Me</span>
                         <br><span class="text">
                             Hallo, mein Name ist Gabriel, und ich interessiere mich fürs Programmieren.
                             Meine Hauptprogrammiersprache ist Java, aber ich arbeite gelegentlich auch mit Python.
@@ -88,13 +90,19 @@ public static void main(String[] args) {
                     </p>
                     <br>
                     <p>
-                        <span class="ueberschrift">Projekte</span>
+                        <span class="textHeadline">📌Projekte</span>
                         <span class="text">
-                            <br>Alle meine Projekte sind
-                            <a id="link" href="https://github.com/github-gabriel" target="blank">hier</a>
+                            <br>Alle meine Projekte sind auf meinem
+                            <a id="link" href="https://github.com/github-gabriel" target="blank">GitHub</a>
                             auffindbar.
                         </span>
                     </p>
+                    <button type="button" class="button stop">
+                        <span class="button__text">Stop</span>
+                        <span class="button__icon">
+                          <ion-icon name="stop"></ion-icon>
+                        </span>
+                    </button>
                 </div>
             </div>
 

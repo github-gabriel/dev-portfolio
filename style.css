@@ -136,6 +136,14 @@ pre {
     border-top: none;
 }
 
+.console{
+    padding: 10px 22px 2px 22px;
+}
+
+#Console, #Code{
+    position:relative;
+}
+
 /* adjusting stack overflow style */
 #Code pre code.hljs {
     padding: 1em 1em 0 1em;
@@ -149,13 +157,24 @@ pre {
 
 /* Run Code Button */
 
-.runBtn {
+.run{
+    background-color: rgb(44, 156, 0);
+}
+
+.stop{
+    background-color: rgb(204, 2, 2);
+}
+
+.stop .button__icon{
+    width: 28px;
+}
+
+.button {
     /* position: absolute; */
     /* bottom: 8%; */
     display: inline-flex;
-    width: 160px;
+    width: 130px;
     height: 40px;
-    background-color: rgb(44, 156, 0);
     margin-left: 1.5%;
     border: none;
     outline: none;
@@ -165,14 +184,25 @@ pre {
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    left: 12px;
 }
 
-.runBtn:hover {
+.run:hover {
     background-color: rgb(40, 139, 0);
 }
 
-.runBtn:active {
+.run:active {
     background-color: rgb(40, 139, 0);
+}
+
+.stop:hover {
+    background-color: rgb(187, 7, 7);
+}
+
+.stop:active {
+    background-color: rgb(187, 7, 7);
 }
 
 .button__text,
@@ -180,16 +210,17 @@ pre {
     font-size: 24px;
     display: inline-flex;
     align-items: center;
-    padding: 0 22px;
     color: #fff;
     height: 100%;
 }
 
 .button__text {
-    width: 30px;
+    padding: 0 20px 0 10px;
+    width: 35px;
 }
 
 .button__icon {
+    padding: 0 18px 0 12px;
     width: 34px;
     font-size: 5em;
     background: rgba(0, 0, 0, 0.08);
@@ -197,18 +228,16 @@ pre {
 
 /* Text */
 
-.ueberschrift {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+.textHeadline {
     font-weight: 1000;
-    font-size: 26px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
-    font-family: "Poppins-Bold", sans-serif;
+    font-family: "Consolas", sans-serif;
 
 }
 
 .text {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
     font-family: "Poppins-Regular", sans-serif;
 }
