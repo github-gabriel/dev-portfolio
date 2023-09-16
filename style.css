@@ -23,17 +23,6 @@
     }
 }
 
-@media (max-width: 375px) {
-    .button__text {
-        padding: 0 10px 0 5px;
-        width: 25px;
-    }
-    .button__icon {
-        padding: 0 9px 0 6px;
-        width: 24px;
-    }
-}
-
 p{
     margin: 0;
     padding: 0;
