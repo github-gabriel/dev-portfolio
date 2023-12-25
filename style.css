@@ -1,273 +1,280 @@
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url("/assets/fonts/Poppins-Bold.ttf");
+  font-family: "Poppins-Bold";
+  src: url("/assets/fonts/Poppins-Bold.ttf");
 }
 @font-face {
-    font-family: "Poppins-Regular";
-    src: url("/assets/fonts/Poppins-Regular.ttf");
+  font-family: "Poppins-Regular";
+  src: url("/assets/fonts/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: "Poppins-ExtraBold";
-    src: url("/assets/fonts/Poppins-ExtraBold.ttf");
+  font-family: "Poppins-ExtraBold";
+  src: url("/assets/fonts/Poppins-ExtraBold.ttf");
 }
 
 @media (max-width: 1000px) {
-    .container {
-        width: 90%;
-    }
+  .container {
+    width: 90%;
+  }
 }
 
 @media (max-height: 600px) {
-    .wrapper{
-        height: 70%;
-    }
+  .wrapper {
+    height: 70%;
+  }
 }
 
-p{
-    margin: 0;
-    padding: 0;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
 }
 
 /* Portfolio Header */
 
 #header {
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins-ExtraBold", sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(45deg, #4158D0 -10%, #C850C0 40%, #ffb116 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins-ExtraBold", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(
+    45deg,
+    #4158d0 -10%,
+    #c850c0 40%,
+    #ffb116 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
 }
 
 #subtitle {
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins-Bold", sans-serif;
-    align-self: center;
-    font-size: 30px;
-    margin-bottom: 75px;
-    color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins-Bold", sans-serif;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 30px;
+  margin-bottom: 75px;
+  color: white;
 }
 
 /* Container */
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .container {
-    background-color: #282c34;
-    border-radius: 25px;
-    text-align: center;
-    width: 750px;
+  background-color: #282c34;
+  border-radius: 25px;
+  text-align: center;
+  width: 750px;
 }
 
 /* Tabs */
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 3px solid #1C1B1B;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    background-color: #f1f1f1;
+  overflow: hidden;
+  border: 3px solid #1c1b1b;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #f1f1f1;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    font-weight: 700;
-    font-size: 26px;
-    font-family: Consolas, monospace;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 18px;
-    transition: 0.3s;
-    color: black;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: Consolas, monospace;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 18px;
+  transition: 0.3s;
+  color: black;
 }
 
 /* reset pre tag */
 pre {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .tab button:focus {
-    background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197);
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197);
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    height: 396px;
-    font-size: 22px;
-    border: 3px solid #121212;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    font-family: Consolas, monospace;
-    text-align: left;
-    padding: 6px 12px;
-    border-top: none;
+  display: none;
+  height: 396px;
+  font-size: 22px;
+  border: 3px solid #121212;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-family: Consolas, monospace;
+  text-align: left;
+  padding: 6px 12px;
+  border-top: none;
 }
 
-.console{
-    padding: 10px 22px 2px 22px;
+.console {
+  padding: 10px 22px 2px 22px;
 }
 
-#Console, #Code{
-    position:relative;
+#Console,
+#Code {
+  position: relative;
 }
 
 /* adjusting stack overflow style */
 #Code pre code.hljs {
-    padding: 1em 1em 0 1em;
+  padding: 1em 1em 0 1em;
 }
 
 /* Gets added whenever a tab button is pressed */
 
 .focused {
-    background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197);
 }
 
 /* Run Code Button */
 
-.run{
-    background-color: rgb(44, 156, 0);
+.run {
+  background-color: rgb(44, 156, 0);
 }
 
-.stop{
-    background-color: rgb(204, 2, 2);
+.stop {
+  background-color: rgb(204, 2, 2);
 }
 
-.stop .button__icon{
-    width: 28px;
+.stop .button__icon {
+  width: 28px;
 }
 
 .button {
-    /* position: absolute; */
-    /* bottom: 8%; */
-    display: inline-flex;
-    width: 130px;
-    height: 40px;
-    margin-left: 1.5%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
-    position: absolute;
-    bottom: 25px;
-    left: 12px;
+  /* position: absolute; */
+  /* bottom: 8%; */
+  display: inline-flex;
+  width: 130px;
+  height: 40px;
+  margin-left: 1.5%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  left: 12px;
 }
 
 .run:hover {
-    background-color: rgb(40, 139, 0);
+  background-color: rgb(40, 139, 0);
 }
 
 .run:active {
-    background-color: rgb(40, 139, 0);
+  background-color: rgb(40, 139, 0);
 }
 
 .stop:hover {
-    background-color: rgb(187, 7, 7);
+  background-color: rgb(187, 7, 7);
 }
 
 .stop:active {
-    background-color: rgb(187, 7, 7);
+  background-color: rgb(187, 7, 7);
 }
 
 .button__text,
 .button__icon {
-    font-size: 24px;
-    display: inline-flex;
-    align-items: center;
-    color: #fff;
-    height: 100%;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  height: 100%;
 }
 
 .button__text {
-    padding: 0 20px 0 10px;
-    width: 35px;
+  padding: 0 20px 0 10px;
+  width: 35px;
 }
 
 .button__icon {
-    padding: 0 18px 0 12px;
-    width: 34px;
-    font-size: 5em;
-    background: rgba(0, 0, 0, 0.08);
+  padding: 0 18px 0 12px;
+  width: 34px;
+  font-size: 5em;
+  background: rgba(0, 0, 0, 0.08);
 }
 
 /* Text */
 
 .textHeadline {
-    font-weight: 1000;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    font-family: "Consolas", sans-serif;
-
+  font-weight: 1000;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-family: "Consolas", sans-serif;
 }
 
 .text {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins-Regular", sans-serif;
 }
 
 /* Social Media Icons Container */
 
 .social-profiles {
-    display: flex;
-    align-items: center;
-    /* text-align: center; */
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
 }
 
 /* Social Media Icons */
 
 .icons {
-    color: white;
-    margin-top: 10px;
-    padding: 10px;
-    transition: color 0.2s;
-    text-decoration: none;
-    font-size: 4em;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 4em;
 }
 
 .icons:hover {
-    color: #b6b6b6;
+  color: #b6b6b6;
 }
 
 /* Href */
 
 #link {
-    color: #aaa;
+  color: #aaa;
 }
