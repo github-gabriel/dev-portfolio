@@ -39,17 +39,27 @@ body {
 /* Portfolio Header */
 
 #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: "Poppins-ExtraBold", sans-serif;
   font-weight: 700;
   font-size: 60px;
   margin-bottom: 10px;
+  background-image: -o-linear-gradient(
+          45deg,
+          #4158d0 -10%,
+          #c850c0 40%,
+          #ffb116 100%
+  );
   background-image: linear-gradient(
-    45deg,
-    #4158d0 -10%,
-    #c850c0 40%,
-    #ffb116 100%
+          45deg,
+          #4158d0 -10%,
+          #c850c0 40%,
+          #ffb116 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -58,7 +68,11 @@ body {
 }
 
 #subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: "Poppins-Bold", sans-serif;
   -ms-grid-row-align: center;
@@ -71,8 +85,14 @@ body {
 /* Container */
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100%;
 }
@@ -105,6 +125,8 @@ body {
   outline: none;
   cursor: pointer;
   padding: 14px 18px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   color: black;
 }
@@ -180,6 +202,7 @@ pre {
 .button {
   /* position: absolute; */
   /* bottom: 8%; */
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 130px;
   height: 40px;
@@ -216,7 +239,10 @@ pre {
 .button__text,
 .button__icon {
   font-size: 24px;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #fff;
   height: 100%;
@@ -252,9 +278,15 @@ pre {
 /* Social Media Icons Container */
 
 .social-profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* text-align: center; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -264,6 +296,8 @@ pre {
   color: white;
   margin-top: 10px;
   padding: 10px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
   transition: color 0.2s;
   text-decoration: none;
   font-size: 4em;

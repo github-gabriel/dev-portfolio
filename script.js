@@ -2,22 +2,24 @@
 
 function onLoadFunctions(){
     document.getElementById("codeBtn").classList.add('focused');
-    document.getElementsByClassName("run")[0].onclick = function (){
+    document.getElementsByClassName("run")[0].addEventListener("click", function (){
         openTab("Console")
-    }
-    document.getElementsByClassName("stop")[0].onclick = function (){
+    })
+    document.getElementsByClassName("stop")[0].addEventListener("click", function (){
         openTab("Code")
-    }
-    document.getElementById("codeBtn").onclick = function (){
+    })
+    document.getElementById("codeBtn").addEventListener("click", function (){
         openTab("Code")
-    }
-    document.getElementById("consoleBtn").onclick = function (){
+    })
+    document.getElementById("consoleBtn").addEventListener("click", function (){
         openTab("Console")
-    }
+    })
 }
 window.onload = onLoadFunctions;
 
 function openTab(tabName) {
+    event.preventDefault();
+
     const codeBtn = document.getElementById("codeBtn");
     const consoleBtn = document.getElementById("consoleBtn");
     const tabContent = document.getElementsByClassName("tabcontent");
@@ -25,7 +27,9 @@ function openTab(tabName) {
 
     // Reset all tabs and buttons
     codeBtn.classList.remove('focused');
+    codeBtn.offsetWidth;
     consoleBtn.classList.remove('focused');
+    consoleBtn.offsetWidth;
 
     for (let i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
@@ -37,9 +41,12 @@ function openTab(tabName) {
 
     // Show the selected tab and add "active" class to the button
     document.getElementById(tabName).style.display = "block";
+    let button;
     if (tabName === "Code") {
-        codeBtn.classList.add('focused');
+        button = codeBtn;
     } else {
-        consoleBtn.classList.add('focused');
+        button = consoleBtn;
     }
+    button.classList.add('focused');
+    void button.offsetWidth;
 }
