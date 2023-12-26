@@ -129,6 +129,7 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
   color: black;
+  background-color: #f1f1f1;
 }
 
 /* reset pre tag */
@@ -169,6 +170,7 @@ pre {
   padding: 10px 22px 2px 22px;
 }
 
+
 #Console,
 #Code {
   position: relative;
@@ -182,7 +184,7 @@ pre {
 /* Gets added whenever a tab button is pressed */
 
 .focused {
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197) !important;
 }
 
 /* Run Code Button */
